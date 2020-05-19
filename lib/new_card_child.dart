@@ -29,19 +29,24 @@ class newCardChild extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: <Widget>[
-              Text(
-                text,
-                style: TextStyle(fontSize: 30.0, color: Colors.black54),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 28.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  Text(
+                    text,
+                    style: TextStyle(fontSize: 30.0, color: Colors.black54),
+                  ),
+                  Text(
+                    desc,
+                    style: TextStyle(color: Colors.black54),
+                  )
+                ],
               ),
-              Text(
-                desc,
-                style: TextStyle(color: Colors.black54),
-              )
-            ],
+            ),
           )
         ],
       ),
