@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:slimy_card/slimy_card.dart';
-import 'input_page.dart';
+import 'input_Page1.dart';
+import 'all_constants.dart';
 
 void main() {
   //Don't worry about these codes here, as they are not relevant for this example.
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFF24252A),
+        scaffoldBackgroundColor: kBackgroundColor,
         fontFamily: 'Poppins',
       ),
-      home: InputPage(),
+      home: InputPage1(),
     );
   }
 }
