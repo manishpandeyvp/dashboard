@@ -9,7 +9,7 @@ class BusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80.0,
+      height: 60.0,
       decoration: BoxDecoration(
           color: kCardColor, borderRadius: BorderRadius.circular(5.0)),
       child: Row(
@@ -23,17 +23,17 @@ class BusCard extends StatelessWidget {
               children: <Widget>[
                 Text(
                   '09:00',
-                  style: TextStyle(fontSize: 30.0, color: kTextColor),
+                  style: TextStyle(fontSize: 25.0, color: kTextColor),
                 ),
                 Text(
                   'AM',
-                  style: TextStyle(color: kTextColor),
+                  style: TextStyle(color: kTextColor, fontSize: 10.0),
                 )
               ],
             ),
           ),
           SizedBox(
-            height: 70,
+            height: 50,
             width: 1,
             child: Expanded(
                 child: Container(
@@ -49,7 +49,7 @@ class BusCard extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     text,
-                    style: TextStyle(fontSize: 30.0, color: kTextColor),
+                    style: TextStyle(fontSize: 20.0, color: kTextColor),
                   ),
                   Text(
                     'to',

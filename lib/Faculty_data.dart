@@ -37,13 +37,13 @@ class _FacultyDataState extends State<FacultyData> {
         theme: FFNavigationBarTheme(
           barBackgroundColor: kBackgroundColor,
           selectedItemBorderColor: kBackgroundColor,
-          selectedItemBackgroundColor: kCardColor,
+          selectedItemBackgroundColor: Colors.white,
           selectedItemIconColor: kBackgroundColor,
-          selectedItemLabelColor: kCardColor,
+          selectedItemLabelColor: Colors.white,
           showSelectedItemShadow: false,
           barHeight: 55,
-          unselectedItemIconColor: kCardColor,
-          unselectedItemLabelColor: kCardColor,
+          unselectedItemIconColor: Colors.white,
+          unselectedItemLabelColor: Colors.white,
         ),
         selectedIndex: selectedIndex,
         onSelectTab: (index) {
@@ -59,7 +59,7 @@ class _FacultyDataState extends State<FacultyData> {
           FFNavigationBarItem(
             iconData: Icons.people,
             label: 'Positions',
-            selectedBackgroundColor: kCardColor,
+            selectedBackgroundColor: Colors.white,
           ),
         ],
       ),
