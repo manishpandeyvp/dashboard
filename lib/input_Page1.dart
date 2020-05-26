@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'new_card_child.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'bus_schedule.dart';
-import 'mess_try.dart';
 import 'package:dashboard/Faculty_data.dart';
 import 'result_page_today.dart';
+import 'search_faculty_card.dart';
 
 class InputPage1 extends StatefulWidget {
   @override
@@ -28,7 +28,7 @@ class _InputPage1State extends State<InputPage1> {
             },
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: newCardChild(
+              child: NewCardChild(
                 icon: FontAwesomeIcons.hamburger,
                 text: 'MESS',
                 desc: 'Breakfast ke liye uth jana!!',
@@ -39,12 +39,12 @@ class _InputPage1State extends State<InputPage1> {
             onTap: () {
               setState(() {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Bus_Schedule()));
+                    MaterialPageRoute(builder: (context) => BusSchedule()));
               });
             },
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: newCardChild(
+              child: NewCardChild(
                 icon: FontAwesomeIcons.cookie,
                 text: 'BUS',
                 desc: 'Aaj ghumne chlte hain',
@@ -60,7 +60,7 @@ class _InputPage1State extends State<InputPage1> {
             },
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: newCardChild(
+              child: NewCardChild(
                 icon: FontAwesomeIcons.cookie,
                 text: 'FACULTY',
                 desc: 'VKG ko chull machi h exams ki',

@@ -1,7 +1,8 @@
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'bus_card.dart';
 import 'all_constants.dart';
+import 'faculty_card.dart';
+import 'search_bar.dart';
 
 class FacultyData extends StatefulWidget {
   FacultyData({Key key}) : super(key: key);
@@ -11,8 +12,6 @@ class FacultyData extends StatefulWidget {
 }
 
 class _FacultyDataState extends State<FacultyData> {
-  int selectedIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,41 +27,7 @@ class _FacultyDataState extends State<FacultyData> {
           color: kIconColor,
         ),
       ),
-      body: Center(
-        child: ListView(
-          children: <Widget>[],
-        ),
-      ),
-      bottomNavigationBar: FFNavigationBar(
-        theme: FFNavigationBarTheme(
-          barBackgroundColor: kBackgroundColor,
-          selectedItemBorderColor: kBackgroundColor,
-          selectedItemBackgroundColor: Colors.white,
-          selectedItemIconColor: kBackgroundColor,
-          selectedItemLabelColor: Colors.white,
-          showSelectedItemShadow: false,
-          barHeight: 55,
-          unselectedItemIconColor: Colors.white,
-          unselectedItemLabelColor: Colors.white,
-        ),
-        selectedIndex: selectedIndex,
-        onSelectTab: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
-        items: [
-          FFNavigationBarItem(
-            iconData: Icons.search,
-            label: 'Search',
-          ),
-          FFNavigationBarItem(
-            iconData: Icons.people,
-            label: 'Positions',
-            selectedBackgroundColor: Colors.white,
-          ),
-        ],
-      ),
+      body: MyApp(),
     );
   }
 }

@@ -23,7 +23,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.hamburger,
               text: 'MONDAY',
               desc: 'Breakfast ke liye uth jana!!',
@@ -39,7 +39,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.cookie,
               text: 'TUESDAY',
               desc: 'Aaj Lunch me chhole hain 😋',
@@ -55,7 +55,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.hotdog,
               text: 'WEDNESDAY',
               desc: 'Mess chle jana!!',
@@ -71,7 +71,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.iceCream,
               text: 'THURSDAY',
               desc: 'Aaj bhi... lol',
@@ -87,7 +87,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.pepperHot,
               text: 'FRIDAY',
               desc: 'Paise diye hain mess walo ko!',
@@ -103,7 +103,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.pizzaSlice,
               text: 'SATURDAY',
               desc: 'Sun liya kar meri bhi... ',
@@ -119,7 +119,7 @@ class _InputPageState extends State<InputPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: newCardChild(
+            child: NewCardChild(
               icon: FontAwesomeIcons.solidLemon,
               text: 'SUNDAY',
               desc: 'Bhai aaj Sun h.. jaroor jaana!!',

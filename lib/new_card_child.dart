@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'all_constants.dart';
 
-class newCardChild extends StatelessWidget {
-  newCardChild({@required this.text, @required this.icon, @required this.desc});
+class NewCardChild extends StatelessWidget {
+  NewCardChild({@required this.text, @required this.icon, @required this.desc});
   final String text;
   final IconData icon;
   final String desc;
@@ -14,12 +14,6 @@ class newCardChild extends StatelessWidget {
       height: 80.0,
       decoration: BoxDecoration(
           color: kCardColor,
-//          gradient: LinearGradient(
-//            begin: Alignment.topLeft,
-//            end: Alignment.bottomRight,
-//            colors: [kCardColor, Colors.white30],
-//            tileMode: TileMode.repeated,
-//          ),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(40.0),
             bottomLeft: Radius.circular(40.0),

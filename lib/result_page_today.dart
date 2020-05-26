@@ -72,17 +72,17 @@ class _ResultPageTodayState extends State<ResultPageToday> {
   }
 
   // This widget will be passed as Top Card's Widget.
-  Widget topCardWidget(String T1, String T2) {
+  Widget topCardWidget(String t1, String t2) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          T1,
+          t1,
           style: TextStyle(color: kTextColor, fontSize: 20),
         ),
         SizedBox(height: 15),
         Text(
-          T2,
+          t2,
           style: TextStyle(color: kTextColor, fontSize: 12),
         ),
         SizedBox(height: 10),
@@ -91,9 +91,9 @@ class _ResultPageTodayState extends State<ResultPageToday> {
   }
 
   // This widget will be passed as Bottom Card's Widget.
-  Widget bottomCardWidget(String M1) {
+  Widget bottomCardWidget(String m1) {
     return Text(
-      M1,
+      m1,
       style: TextStyle(
         color: kTextColor,
         fontSize: 12,
