@@ -5,7 +5,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'bus_schedule.dart';
 import 'package:dashboard/Faculty_data.dart';
 import 'result_page_today.dart';
-import 'search_faculty_card.dart';
 
 class InputPage1 extends StatefulWidget {
   @override

@@ -33,6 +33,9 @@ dependencies:
   ff_navigation_bar: ^0.1.5
   line_awesome_flutter: ^1.0.1
   flappy_search_bar: ^1.7.2
+  animations: ^1.0.0+5
+  sa_stateless_animation: ^1.0.1
+  simple_animations: ^2.2.1
 
 dev_dependencies:
   flutter_test:

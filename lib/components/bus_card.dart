@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'all_constants.dart';
+import '../all_constants.dart';
 
 class BusCard extends StatelessWidget {
   BusCard({@required this.text, @required this.desc});

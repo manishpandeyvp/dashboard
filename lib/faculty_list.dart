@@ -1,6 +1,4 @@
 import 'search_faculty_card.dart';
-import 'package:flutter/material.dart';
-import 'faculty_card.dart';
 
 var facultyList = {
   'Vijay Kumar Gupta': SearchFacultyCard(

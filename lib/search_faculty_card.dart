@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'all_constants.dart';
-import 'faculty_card.dart';
+import 'components/faculty_card.dart';
 
 class SearchFacultyCard extends StatefulWidget {
   SearchFacultyCard({
