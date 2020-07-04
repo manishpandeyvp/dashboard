@@ -97,12 +97,24 @@ class _DashBoardState extends State<DashBoard> {
                 GestureDetector(
                   onTap: () {},
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30),
+                    )),
                     child: Container(
                       height: size.width * 0.35,
                       width: size.width * 0.35,
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(50.0)),
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(30),
+                            topLeft: Radius.circular(30),
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
+                          )),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -139,12 +151,24 @@ class _DashBoardState extends State<DashBoard> {
                     });
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30),
+                    )),
                     child: Container(
                       height: size.width * 0.35,
                       width: size.width * 0.35,
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(50.0)),
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(30),
+                            topLeft: Radius.circular(30),
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
+                          )),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -187,12 +211,24 @@ class _DashBoardState extends State<DashBoard> {
                     });
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30),
+                    )),
                     child: Container(
                       height: size.width * 0.35,
                       width: size.width * 0.35,
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(50.0)),
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(30),
+                            topLeft: Radius.circular(30),
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
+                          )),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -229,12 +265,24 @@ class _DashBoardState extends State<DashBoard> {
                     });
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30),
+                    )),
                     child: Container(
                       height: size.width * 0.35,
                       width: size.width * 0.35,
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(50.0)),
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(30),
+                            topLeft: Radius.circular(30),
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
+                          )),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
