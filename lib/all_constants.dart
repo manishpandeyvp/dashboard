@@ -5,21 +5,13 @@ import 'package:flutter/material.dart';
 
 const kTextColor = Color(0xFF354B98);
 
-const kCardColor = Color(0xFFFFCC01);
+const kCardColor = Color(0xFFFFFFFF);
 
-var kBackgroundColor = Color(0xFF28387D);
-
-//var kCardColor = Color(0xFF354B98);
+var kBackgroundColor = Color(0xFF008CAB);
 
 var kIconColor = Color(0xFF28387D);
 
 const kFABColor = Colors.white;
-
-//0A154D
-
-//800080
-
-//0xFFF74A59
 
 const kFacultyCardTextStyle = TextStyle(
     color: Colors.white,

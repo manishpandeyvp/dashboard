@@ -1,3 +1,4 @@
+import 'package:dashboard/all_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'new_card_child.dart';
@@ -6,67 +7,294 @@ import 'bus_schedule.dart';
 import 'package:dashboard/Faculty_data.dart';
 import 'result_page_today.dart';
 
-class InputPage1 extends StatefulWidget {
+class DashBoard extends StatefulWidget {
   @override
-  _InputPage1State createState() => _InputPage1State();
+  _DashBoardState createState() => _DashBoardState();
 }
 
-class _InputPage1State extends State<InputPage1> {
+class _DashBoardState extends State<DashBoard> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-          body: ListView(
-        children: <Widget>[
-          GestureDetector(
-            onTap: () {
-              setState(() {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ResultPageToday()));
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: NewCardChild(
-                icon: FontAwesomeIcons.hamburger,
-                text: 'MESS',
-                desc: 'Breakfast ke liye uth jana!!',
+          body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              children: [
+                Icon(
+                  Icons.account_circle,
+                  color: Colors.white,
+                  size: 32,
+                ),
+                Spacer(),
+                Text(
+                  'IIITDMJ ',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Companion',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w300),
+                )
+              ],
+            ),
+            SizedBox(
+              height: size.height * 0.08,
+            ),
+            Row(
+              children: [
+                Text(
+                  'Hello, ',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 19,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                Text(
+                  'Suchir Sharma',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 19,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              '2019148',
+              style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500),
+            ),
+            SizedBox(
+              height: size.height * 0.05,
+            ),
+            Text(
+              'What are you looking for today ?',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+                fontWeight: FontWeight.w100,
               ),
             ),
-          ),
-          GestureDetector(
-            onTap: () {
-              setState(() {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => BusSchedule()));
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: NewCardChild(
-                icon: FontAwesomeIcons.cookie,
-                text: 'BUS',
-                desc: 'Aaj ghumne chlte hain',
-              ),
+            SizedBox(
+              height: size.height * 0.05,
             ),
-          ),
-          GestureDetector(
-            onTap: () {
-              setState(() {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FacultyData()));
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: NewCardChild(
-                icon: FontAwesomeIcons.cookie,
-                text: 'FACULTY',
-                desc: 'VKG ko chull machi h exams ki',
-              ),
+            Row(
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ResultPageToday()));
+                    });
+                  },
+                  child: Card(
+                    child: Container(
+                      height: size.width * 0.35,
+                      width: size.width * 0.35,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(50.0)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Icon(
+                            Icons.today,
+                            color: kBackgroundColor,
+                            size: size.width * 0.12,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Timetable',
+                            style: TextStyle(
+                                color: kBackgroundColor,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Spacer()
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Spacer(),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BusSchedule()));
+                    });
+                  },
+                  child: Card(
+                    child: Container(
+                      height: size.width * 0.35,
+                      width: size.width * 0.35,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(50.0)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Icon(
+                            Icons.people,
+                            color: kBackgroundColor,
+                            size: size.width * 0.12,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Faculty',
+                            style: TextStyle(
+                                color: kBackgroundColor,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Spacer()
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ),
-        ],
+            SizedBox(
+              height: size.height * 0.03,
+            ),
+            Row(
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ResultPageToday()));
+                    });
+                  },
+                  child: Card(
+                    child: Container(
+                      height: size.width * 0.35,
+                      width: size.width * 0.35,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(50.0)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Icon(
+                            Icons.airport_shuttle,
+                            color: kBackgroundColor,
+                            size: size.width * 0.12,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Bus Schedule',
+                            style: TextStyle(
+                                color: kBackgroundColor,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Spacer()
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Spacer(),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BusSchedule()));
+                    });
+                  },
+                  child: Card(
+                    child: Container(
+                      height: size.width * 0.35,
+                      width: size.width * 0.35,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(50.0)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Spacer(),
+                          Icon(
+                            Icons.restaurant,
+                            color: kBackgroundColor,
+                            size: size.width * 0.12,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Mess Menu',
+                            style: TextStyle(
+                                color: kBackgroundColor,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Spacer()
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Spacer(),
+            Row(
+              children: [
+                Spacer(),
+                Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                  size: 22,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  'Settings',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 17,
+                      fontWeight: FontWeight.w200),
+                ),
+                Spacer()
+              ],
+            )
+          ],
+        ),
       )),
     );
   }
