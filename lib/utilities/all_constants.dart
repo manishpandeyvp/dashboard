@@ -16,28 +16,17 @@ const kFABColor = Colors.white;
 const kFacultyCardTextStyle = TextStyle(
     color: Colors.white,
     fontSize: 15.0,
-    letterSpacing: 4,
-    fontFamily: 'SourceSansPro');
+    letterSpacing: 2,
+    fontWeight: FontWeight.w300);
 
 const kSearchBarDecoration = InputDecoration(
   filled: false,
-  labelText: "Search",
-  labelStyle: TextStyle(color: Colors.white),
   hintText: "Search",
-  hintStyle: TextStyle(color: Colors.white70),
-  prefixIcon: Icon(
-    Icons.search,
-    color: Colors.white,
-  ),
-  border: OutlineInputBorder(
-    borderRadius: BorderRadius.all(Radius.circular(32.0)),
-  ),
+  hintStyle: TextStyle(color: Colors.white),
   enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.white, width: 1.0),
-    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    borderSide: BorderSide(color: Colors.transparent),
   ),
   focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: Colors.white, width: 2.0),
-    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    borderSide: BorderSide(color: Colors.transparent),
   ),
 );

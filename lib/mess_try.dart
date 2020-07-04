@@ -1,6 +1,6 @@
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'all_constants.dart';
+import 'utilities/all_constants.dart';
 import 'input_page.dart';
 import 'result_page_today.dart';
 

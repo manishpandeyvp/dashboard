@@ -1,7 +1,7 @@
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'components/bus_card.dart';
-import 'all_constants.dart';
+import 'utilities/all_constants.dart';
 
 class BusSchedule extends StatefulWidget {
   BusSchedule({Key key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'all_constants.dart';
-import 'components/faculty_card.dart';
+import '../utilities/all_constants.dart';
+import 'faculty_card.dart';
 
 class SearchFacultyCard extends StatefulWidget {
   SearchFacultyCard({
@@ -44,21 +44,28 @@ class _SearchFacultyCardState extends State<SearchFacultyCard> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(right: 28.0),
+                padding: const EdgeInsets.only(right: 20.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
                     Text(
                       widget.text,
-                      style: TextStyle(fontSize: 17.0, color: Colors.white),
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w200,
+                      ),
                     ),
                     SizedBox(
                       height: 2.0,
                     ),
                     Text(
                       widget.desc,
-                      style: TextStyle(fontSize: 13.0, color: Colors.white),
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400),
                     )
                   ],
                 ),

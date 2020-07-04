@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'all_constants.dart';
+import 'utilities/all_constants.dart';
 
 class NewCardChild extends StatelessWidget {
   NewCardChild({@required this.text, @required this.icon, @required this.desc});

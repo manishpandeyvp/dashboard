@@ -1,11 +1,9 @@
-import 'package:dashboard/all_constants.dart';
+import 'file:///C:/Users/hp/AndroidStudioProjects/dashboard/lib/utilities/all_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'new_card_child.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'bus_schedule.dart';
-import 'package:dashboard/Faculty_data.dart';
-import 'result_page_today.dart';
+import '../bus_schedule.dart';
+import 'file:///C:/Users/hp/AndroidStudioProjects/dashboard/lib/screens/faculty_search_screen.dart';
+import '../result_page_today.dart';
 
 class DashBoard extends StatefulWidget {
   @override
@@ -97,14 +95,7 @@ class _DashBoardState extends State<DashBoard> {
             Row(
               children: [
                 GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ResultPageToday()));
-                    });
-                  },
+                  onTap: () {},
                   child: Card(
                     child: Container(
                       height: size.width * 0.35,
@@ -144,7 +135,7 @@ class _DashBoardState extends State<DashBoard> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BusSchedule()));
+                              builder: (context) => FacultySearchScreen()));
                     });
                   },
                   child: Card(
@@ -192,7 +183,7 @@ class _DashBoardState extends State<DashBoard> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ResultPageToday()));
+                              builder: (context) => BusSchedule()));
                     });
                   },
                   child: Card(
@@ -234,7 +225,7 @@ class _DashBoardState extends State<DashBoard> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BusSchedule()));
+                              builder: (context) => ResultPageToday()));
                     });
                   },
                   child: Card(

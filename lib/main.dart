@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'input_Page1.dart';
-import 'all_constants.dart';
+import 'screens/dashboard.dart';
+import 'utilities/all_constants.dart';
 
 void main() {
   //Don't worry about these codes here, as they are not relevant for this example.

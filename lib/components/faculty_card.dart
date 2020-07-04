@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../all_constants.dart';
+import '../utilities/all_constants.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class FacultyCard extends StatefulWidget {
   @override
@@ -10,27 +11,32 @@ class FacultyCard extends StatefulWidget {
 class _FacultyCardState extends State<FacultyCard> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.white,
-        child: Icon(
-          Icons.arrow_back,
-          color: kIconColor,
-        ),
-        onPressed: () {
-          setState(() {
-            Navigator.pop(context);
-          });
-        },
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 20),
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        Navigator.pop(context);
+                      });
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      color: Colors.white,
+                      size: 23,
+                    ),
+                  ),
+                  Spacer(),
+                ],
+              ),
               SizedBox(
-                height: 10,
+                height: 5,
               ),
               CircleAvatar(
                 radius: 50.0,
@@ -44,16 +50,14 @@ class _FacultyCardState extends State<FacultyCard> {
                 style: kFacultyCardTextStyle,
               ),
               SizedBox(
-                height: 10,
+                height: 7,
               ),
               Text(
                 'Vijay Kumar Gupta',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'AmaticSC',
-                ),
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 7,
@@ -83,7 +87,7 @@ class _FacultyCardState extends State<FacultyCard> {
                 margin: EdgeInsets.symmetric(horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.phone,
+                    LineAwesomeIcons.phone,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -115,7 +119,7 @@ class _FacultyCardState extends State<FacultyCard> {
                 margin: EdgeInsets.symmetric(horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.supervisor_account,
+                    LineAwesomeIcons.glasses,
                     color: Colors.white,
                   ),
                   title: Text(

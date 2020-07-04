@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slimy_card/slimy_card.dart';
-import 'all_constants.dart';
+import 'utilities/all_constants.dart';
 import 'just_try.dart';
 
 class ResultPageToday extends StatefulWidget {
