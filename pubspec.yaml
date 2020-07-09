@@ -36,6 +36,9 @@ dependencies:
   animations: ^1.0.0+5
   sa_stateless_animation: ^1.0.1
   simple_animations: ^2.2.1
+  timeline_tile: ^0.1.2
+  flutter_swiper: ^1.1.6
+  carousel_slider: ^2.2.1
 
 dev_dependencies:
   flutter_test:
