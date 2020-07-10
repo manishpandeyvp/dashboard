@@ -1,10 +1,9 @@
 import 'file:///C:/Users/hp/AndroidStudioProjects/dashboard/lib/utilities/all_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../bus_schedule.dart';
 import 'file:///C:/Users/hp/AndroidStudioProjects/dashboard/lib/screens/faculty_search_screen.dart';
-import '../result_page_today.dart';
 import 'mess_menu_screen.dart';
+import 'bus_schedule_screen.dart';
 
 class DashBoard extends StatefulWidget {
   @override
@@ -208,7 +207,7 @@ class _DashBoardState extends State<DashBoard> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BusSchedule()));
+                              builder: (context) => BusScheduleScreen()));
                     });
                   },
                   child: Card(

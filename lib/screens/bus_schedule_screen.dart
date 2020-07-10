@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:dashboard/utilities/all_constants.dart';
 
-class MessMenuScreen extends StatefulWidget {
+class BusScheduleScreen extends StatefulWidget {
   @override
-  _MessMenuScreenState createState() => _MessMenuScreenState();
+  _BusScheduleScreenState createState() => _BusScheduleScreenState();
 }
 
-class _MessMenuScreenState extends State<MessMenuScreen> {
+class _BusScheduleScreenState extends State<BusScheduleScreen> {
   List items = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   List breakfast = [
     'Vada-Pav, Sambhar, Chutney, Sprouts, Toast, Tea, Butter, Milk',
@@ -82,7 +82,7 @@ class _MessMenuScreenState extends State<MessMenuScreen> {
               height: size.height * 0.01,
             ),
             Text(
-              'MESS MENU',
+              'BUS SCHEDULE',
               style: TextStyle(
                 color: kBackgroundColor,
                 fontSize: size.height * 0.05,
@@ -106,7 +106,7 @@ class _MessMenuScreenState extends State<MessMenuScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 80, // card height
-                child: MessSwipeableCards(),
+                child: busSwipeableCards(),
               ),
             ),
             Spacer(),
@@ -119,109 +119,46 @@ class _MessMenuScreenState extends State<MessMenuScreen> {
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
+                padding: const EdgeInsets.only(
+                    left: 20, right: 20, top: 30, bottom: 30),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(
-                      flex: 1,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Breakfast',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w900,
-                                decoration: TextDecoration.underline),
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            breakfastText,
-                            style: TextStyle(
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'Time',
+                          style: TextStyle(
                               color: Colors.white,
                               fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          Spacer(),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                left: 50, right: 50, bottom: 10),
-                            child: Divider(
-                              thickness: 1,
+                              fontWeight: FontWeight.w900,
+                              decoration: TextDecoration.underline),
+                        ),
+                        Text(
+                          'Routes',
+                          style: TextStyle(
                               color: Colors.white,
-                            ),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w900,
+                              decoration: TextDecoration.underline),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          Expanded(
+                            child: Container(),
                           )
                         ],
                       ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Lunch',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w900,
-                                decoration: TextDecoration.underline),
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            lunchText,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          Spacer(),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                left: 50, right: 50, bottom: 10),
-                            child: Divider(
-                              thickness: 1,
-                              color: Colors.white,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Dinner',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w900,
-                                decoration: TextDecoration.underline),
-                          ),
-                          SizedBox(
-                            height: 4,
-                          ),
-                          Text(
-                            dinnerText,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    )
                   ],
                 ),
               ),
@@ -232,7 +169,7 @@ class _MessMenuScreenState extends State<MessMenuScreen> {
     );
   }
 
-  PageView MessSwipeableCards() {
+  PageView busSwipeableCards() {
     return PageView.builder(
       itemCount: 7,
       onPageChanged: (int index) {
